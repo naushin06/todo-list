@@ -1,4 +1,122 @@
-body{
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 2rem;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #7858A6;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #7858A6;
+  color: white;
+}
+
+.todo-container {
+  padding: 6%;
+  position: relative;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+
+.todo li {
+  padding: 8%;
+  flex: 1;
+  flex: 1 1;
+  background-color: #2F2F2F;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+}
+
+.todo li::after {
+  background-color: greenyellow;
+}
+
+.BTNDIV {
+  background: #2F2F2F;
+  padding: 5%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* Add other styles as needed */
+
+/* Custom Select */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+}
+
+select {
+  padding: 10px;
+  padding-top: 10px;
+  color: #7858A6;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #7858A6;
+  cursor: pointer;
+  pointer-events: none;
+  display: block;
+}
+
+
+/* body{
   width: 100%;
 }
 * {
@@ -275,4 +393,4 @@ height: 30px;
 }
 .del{
   color:white;
-}
+} */
